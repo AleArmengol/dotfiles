@@ -1,0 +1,3 @@
+[submodule "waybar-mechabar/.config/waybar-mechabar"]
+	path = waybar-mechabar/.config/waybar-mechabar
+	url = https://github.com/sejjy/mechabar.git
