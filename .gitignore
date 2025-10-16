@@ -1,0 +1,18 @@
+# caches & runtime
+**/.cache/
+**/cache/
+.local/share/**
+
+# secrets – DO NOT COMMIT
+.ssh/
+.gnupg/
+.git-credentials
+.env
+.envrc
+*.key
+*.pem
+
+# desktop cruft
+*.swp
+*.tmp
+
