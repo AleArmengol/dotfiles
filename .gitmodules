@@ -4,3 +4,4 @@
 [submodule "waybar-mechabar/.config/waybar"]
 	path = waybar-mechabar/.config/waybar
 	url = https://github.com/sejjy/mechabar.git
+	branch = fix/v0.14.0
