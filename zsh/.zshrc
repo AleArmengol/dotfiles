@@ -109,8 +109,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias lal="eza -lhTL2 --icons --no-permissions --no-user $argv"
-alias lss="eza -lhTL1 --icons --no-permissions --no-user $argv"
+# Basic 'ls' — show hidden files (except . and ..), directories first, with icons and colors
+alias ls='eza --group-directories-first --icons --color=always -A'
+
+# 'll' — long listing (-l) with human-readable sizes (-h), directories first, hidden files, icons
+alias ll='eza -lh --group-directories-first --icons --color=always -A'
+
+# 'la' — long listing showing *all* files including . and .. (-a)
+alias la='eza -lha --group-directories-first --icons --color=always'
+
+# 'lt' — tree view (-T) up to 2 levels deep, long format, hidden files, icons, directories first
+alias lt='eza -lT --level=2 --group-directories-first --icons --color=always -A'
+
+# 'tree' — full recursive directory tree with icons, colors, and directories grouped first
+alias tree='eza -T --icons --color=always --group-directories-first'
 export EDITOR=nvim
 export VISUAL=nvim
 
