@@ -1,0 +1,6 @@
+# Atuin config — safe defaults
+style = "auto"          # auto/detailed/compact
+word_jump_mode = "emacs"
+show_preview = true
+enter_accept = false    # don't run immediately; edit first
+filter_mode = "global"  # search across all dirs/sessions
