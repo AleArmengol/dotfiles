@@ -107,38 +107,6 @@ Done — your system now mirrors your preferred environment.
 
 ---
 
-## 🔐 Setting Up GitHub SSH Access
-
-1. **Generate key**
-   ```bash
-   ssh-keygen -t ed25519 -C "your_email@example.com"
-   ```
-   Press **Enter** to accept defaults.
-
-2. **Add it to the agent**
-   ```bash
-   eval "$(ssh-agent -s)"
-   ssh-add ~/.ssh/id_ed25519
-   ```
-
-3. **Copy the public key**
-   ```bash
-   cat ~/.ssh/id_ed25519.pub
-   ```
-   Then paste it at  
-   [GitHub → Settings → SSH and GPG keys → New SSH key](https://github.com/settings/keys)
-
-4. **Test**
-   ```bash
-   ssh -T git@github.com
-   ```
-   You should see:
-   ```
-   Hi <username>! You've successfully authenticated...
-   ```
-
----
-
 ## 🪄 Quick One-Line Setup
 
 ```bash
